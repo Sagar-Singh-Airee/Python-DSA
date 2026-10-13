@@ -1,3 +1,4 @@
+import math    #This is the lib that we should use if  we want to calculte fast
 '''#This file is to  review pyhton !'''
 my_list=["Sagar",10,20,30,44,55]
 length=len(my_list)
@@ -72,6 +73,18 @@ print("*"*50)
 '''Another format of range'''
 for j in range(0,10,2): #This will start with '0' and give you the jumps of '2' till it reaches 9 which is done in range.
     print(j)
+
+print("#"*50)   
+
+'''Now lets use try and except'''
+a_number=int(input("Please enter a number -->"))
+try:
+    print(math.sqrt(a_number))
+except:
+    print("This is the bad value for squre root")
+    print("Try using a positive integer")
+    print(math.sqrt(abs(a_number))) #abs is used to get the absolute value for if the number is negative then it will give positive value and if it is complex than it will give the magnitude
+
 
 
 
